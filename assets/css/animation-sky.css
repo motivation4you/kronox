@@ -1,0 +1,127 @@
+.animation-sky {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+.animation-sky .cloud {
+    position: absolute;
+    opacity: .8;
+    animation: cloud 10s infinite ease-in-out;
+}
+.animation-sky .cloud1 {
+    top: 30vh;
+    left: 10vw;
+}
+.animation-sky .cloud2 {
+    top: 27vh;
+    left: 15vw;
+}
+.animation-sky .cloud3 {
+    top: 24vh;
+    left: 5vw;
+}
+.animation-sky .cloud4 {
+    top: 7vh;
+    right: 15vw;
+}
+.animation-sky .cloud5 {
+    top: 5vh;
+    right: 25vw;
+}
+.animation-sky .cloud6 {
+    top: 2vh;
+    right: 5vw;
+}
+.animation-sky .cloud7 {
+    top: 0vh;
+    right: 16vw;
+}
+.animation-sky .cloud8 {
+    bottom: 0vh;
+    right: 16vw;
+}
+.animation-sky .cloud9 {
+    bottom: 5vh;
+    right: 18vw;
+}
+.animation-sky .cloud0 {
+    bottom: 2vh;
+    right: 6vw;
+}
+
+.animation-sky .hot-air-balloon {
+    width: 256px;
+    position: absolute;
+    left: 6vw;
+    bottom: 30vh;
+    animation: balloon 20s infinite linear;
+    z-index: 3;
+}
+
+.animation-sky .plane {
+    width: 100px;
+    position: absolute;
+    left: -200px;
+    bottom: 100px;
+    animation: plane 5s linear infinite;
+    z-index: 2;
+}
+.animation-sky .plane-second {
+    left: auto;
+    right: -200px;
+    bottom: 370px;
+    animation: second-plane 5s infinite linear;
+    animation-delay: 1.5s;
+}
+
+
+/* ANIMATION */
+
+@keyframes cloud {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes balloon {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(100px, -50px);
+    }
+    50% {
+        transform: translate(100px, 0px);
+    }
+    75% {
+        transform: translate(0px, 50px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes plane {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(2500%, -500%);
+    }
+}
+@keyframes second-plane {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(-2500%, -500%);
+    }
+}

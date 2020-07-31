@@ -1,0 +1,176 @@
+.animation-sea {
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to top, #57deff 10%, #57deff 20%, rgba(188,228,245,1) 21%, rgba(188,228,245,1) 100%);
+    overflow: hidden;
+}
+.transition-sky-sea {
+    background: linear-gradient(to top, rgba(188,228,245,1) 0%, rgba(81,182,226,1) 100%);
+}
+.animation-sea .cloud {
+    width: 100px;
+    position: absolute;
+    top: 30%;
+    right: 20vw;
+    animation: cloud 10s linear infinite;
+}
+.animation-sea .bird {
+    width: 40px;
+    position: absolute;
+    top: 25%;
+    left: -10vw;
+    animation: bird-fly 20s infinite linear;
+}
+.animation-sea .island {
+    width: 400px;
+    position: absolute;
+    bottom: 3%;
+    left: 7vw;
+    z-index: 1;
+} 
+.animation-sea .wave {
+    width: 600px;
+    position: absolute;
+    bottom: 4%;
+    animation: wave 3s infinite linear;
+    z-index: 2;
+    opacity: .7;
+    display: flex;
+    left: -100px;
+}
+.animation-sea .wave img {
+    width: 200px;
+    margin-left: -2px;
+}
+.animation-sea .boat {
+    position: absolute;
+    width: 120px;
+    bottom: 13%;
+    right: -120px;
+    animation: boat 5s linear infinite;
+    z-index: 0;
+}
+.animation-sea .swimming-bird {
+    position: absolute;
+    width: 50px;
+    bottom: 6%;
+    left: 14vw;
+    z-index: 1;
+}
+.animation-sea .duck {
+    position: absolute;
+    width: 128px;
+    bottom: 6%;
+    right: 40vw;
+    animation: duck 10s linear infinite;
+}
+
+
+@keyframes duck {
+    0% {
+        transform: translateX(0) rotateY(0);
+    }
+    48% {
+        transform: translateX(200px) rotateY(0);
+    }
+    50% {
+        transform: translateX(200px) rotateY(180deg);
+    }
+    98% {
+        transform: translateX(0) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(0) rotateY(0);
+    }
+}
+@keyframes bird-swim {
+    0% {
+        transform: translateX(0) rotateY(180deg);
+    }
+    49% {
+        transform: translateX(-30vw) rotateY(180deg);
+    }
+    50% {
+        transform: translateX(-30vw) rotateY(0);
+    }
+    100% {
+        transform: translateX(0) rotateY(0);
+    }
+}
+@keyframes cloud {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes bird-fly {
+    0% {
+        transform: translateX(0) rotateY(0);
+    }
+    50% {
+        transform: translateX(120vw) rotate(0deg);
+    }
+    51% {
+        transform: translateX(120vw) rotateY(180deg);
+    }
+    99% {
+        transform: translateX(0) rotateY(180deg);
+    }
+    100% {
+        transform: translateX(0) rotateY(0);
+    }
+}
+@keyframes wave {
+    0% {
+        transform: translateX(-32px);
+    }
+    10% {
+        transform: translateX(-14px);
+    }
+    20% {
+        transform: translateX(-5px);
+    }
+    30% {
+        transform: translateX(13px);
+    }
+    40% {
+        transform: translateX(22px);
+    }
+    50% {
+        transform: translateX(40px);
+    }
+    60% {
+        transform: translateX(49px);
+    }
+    70% {
+        transform: translateX(67px);
+    }
+    80% {
+        transform: translateX(76px);
+    }
+    90% {
+        transform: translateX(94px);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+@keyframes boat {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
+    100% {
+        transform: translateX(-120vw);
+    }
+}
+@media screen and (max-width: 640px) {
+    .animation-sea {
+        min-height: 2000px;
+    }
+}

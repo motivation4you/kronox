@@ -1,0 +1,10 @@
+.transition-black-core {
+    background: linear-gradient(to top, #000 0%, #0f365e 100%);
+}
+.animation-core {
+    width: 200vw;
+    min-height: 250%;
+    transform: translateX(-25%);
+    position: absolute;
+    background: radial-gradient(ellipse at center, rgba(230,32,32,1) 0%, rgba(230,118,32,1) 21%, rgba(0,0,0,0.99) 58%, rgba(0,0,0,0.99) 100%);
+}

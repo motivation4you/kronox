@@ -1,0 +1,9 @@
+.transition-undersea2-black {
+    background: linear-gradient(to top, #0f365e 0%, #195591 100%);
+}
+.animation-black {
+    width: 100vw;
+    min-height: 100%;
+    position: absolute;
+    background: #0f365e;
+}
